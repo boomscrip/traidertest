@@ -1,0 +1,126 @@
+.mobile_box {
+  margin:30px 20px 0px 20px;
+}
+
+.first {
+  margin:0px 0px 0px 0px;
+  display:flex;
+  justify-content: center;
+}
+
+.second {
+  display:flex;
+  justify-content: center;
+  border-bottom: 60px solid #040db9;
+  border-left: 30px solid transparent;
+  border-right: 30px solid transparent;
+  height: 0;
+  width: 450px;
+}
+
+.one  {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  background-color:#f1f1f1;
+  border-radius: 10px;
+  border: 5px solid #040db9;
+}
+
+.foto {
+  margin:20px;
+  display:flex;
+  height: 300px;
+  width: 300px;
+}
+
+.image {
+    width:300px;
+    height: 300px;
+}
+
+.description {
+  display:flex;
+  width: 100%;
+  height: 100%;
+  margin-left:40px;
+  margin-right:40px;
+
+}
+
+p {
+  font-size: 20px;
+  font-family: sans-serif;
+
+}
+.my_button {
+
+
+
+}
+
+/**
+ * Icon
+ */
+
+.icon {
+  text-transform:uppercase;
+  position: relative;
+  overflow: hidden;
+  width: 250px;
+  height: 15px;
+ padding:10px;
+
+  margin: 25px 0 25px 25px;
+  border-radius: 5px;
+  color: #fff;
+  text-decoration: none;
+  text-align: center;
+  line-height: 50px;
+  font-size: 12px;
+  font-family: sans-serif;
+}
+
+.icon:nth-child(1) { background:#040db9; }
+
+
+/**
+ * The "shine" element
+ */
+
+.icon:after {
+    content: "";
+    height: 200%;
+    left: -230%;
+    opacity: 0;
+    position: absolute;
+    top: -20%;
+    transform: rotate(-30deg);
+    width: 200%;
+
+  background: rgba(255, 255, 255, 0.13);
+  background: linear-gradient(
+    to right,
+    rgba(255, 255, 255, 0.13) 0%,
+    rgba(255, 255, 255, 0.13) 77%,
+    rgba(255, 255, 255, 0.5) 92%,
+    rgba(255, 255, 255, 0.0) 100%
+  );
+}
+
+/* Hover state - trigger effect */
+
+.icon:hover:after {
+    left: -50%;
+    opacity: 1.5;
+    top: -50%;
+    transition-duration: 0.7s, 0.7s, 0.15s;
+    transition-property: left, top, opacity;
+    transition-timing-function: ease;
+}
+
+/* Active state */
+
+.icon:active:after {
+  opacity: 1;
+}
