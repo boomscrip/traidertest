@@ -29,12 +29,13 @@
 }
 
 .workers {
+
   display:flex;
   justify-content: center;
-  width:20%;
+  width:23%;
   flex-wrap: wrap;
-  margin:30px
-
+	margin-left: 15px;
+	margin-right: 15px;
 
 }
 
@@ -70,7 +71,7 @@
 @media screen and (min-width: 290px) and (max-width: 500px) {
 
 	.workers {
-		width: 100%;
+		width: 100% !important;
 	}
 
 
